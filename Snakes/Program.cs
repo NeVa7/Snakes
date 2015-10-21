@@ -10,6 +10,11 @@ namespace Snakes
     {
         static void Main(string[] args)
         {
+            int x = 1;
+            int y = 3;
+            char sym='*'
+
+        
         }
     }
 }
