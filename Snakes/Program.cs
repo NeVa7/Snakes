@@ -12,13 +12,20 @@ namespace Snakes
         {
 
             Point p1 = new Point(1,3,'*');
-            p1.Draw();
-
             Point p2 = new Point(4, 5, '#');
-            p2.Draw();
-
             Point p3 = new Point(6, 7, '@');
-            p3.Draw();
+
+            List<Point> plist = new List<Point>();
+            plist.Add(p1);
+            plist.Add(p2);
+            plist.Add(p3);
+
+            plist.RemoveAt(1);
+
+            foreach (Point _p in plist)
+            {
+                _p.Draw();
+            }
 
             Console.ReadLine();
         
