@@ -10,21 +10,13 @@ namespace Snakes
     {
         static void Main(string[] args)
         {
+            int xSize = 70;
+            int ySize = 20;
 
-            Point p1 = new Point(1,3,'*');
-            Point p2 = new Point(4, 5, '#');
-            Point p3 = new Point(6, 7, '@');
-
-            List<Point> plist = new List<Point>();
-            plist.Add(p1);
-            plist.Add(p2);
-            plist.Add(p3);
-
-            plist.RemoveAt(1);
-
-            foreach (Point _p in plist)
+            for (int _x = 1; _x <= xSize; _x++)
             {
-                _p.Draw();
+                VerticalLine vl = new VerticalLine(1, ySize, _x, '+');
+                vl.Draw();
             }
 
             Console.ReadLine();
