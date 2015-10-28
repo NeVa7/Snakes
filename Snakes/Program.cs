@@ -10,15 +10,11 @@ namespace Snakes
     {
         static void Main(string[] args)
         {
-            int xSize = 70;
-            int ySize = 20;
+            Console.SetBufferSize(80, 25); /* ограничивает размер окна */
 
-            for (int _x = 1; _x <= xSize; _x++)
-            {
-                VerticalLine vl = new VerticalLine(1, ySize, _x, '+');
-                vl.Draw();
-            }
-
+            HorizontLine hl = new HorizontLine(0,78,0,'+');
+            /*VerticalLine vl = new VerticalLine(1, ySize, _x, '+');
+                vl.Draw(); */
             Console.ReadLine();
         
         }
